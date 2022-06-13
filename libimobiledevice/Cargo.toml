@@ -12,7 +12,7 @@ edition = "2018"
 libc = "0.2.67"
 chrono = "0.4.11"
 paste = "0.1.10"
-libplist = { path = "../libplist" }
+libplist = { version = "0.1.0", path = "../libplist" }
 
 [dev-dependencies]
 uuid = { version = "0.5.1", features = ["v4"] }
