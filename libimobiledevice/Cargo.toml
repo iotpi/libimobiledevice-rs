@@ -1,0 +1,24 @@
+[package]
+name = "libimobiledevice"
+version = "0.1.0"
+authors = ["Yang Hongbo <hi@iotpi.io>"]
+description = "rust wrapper for libplist from libimobiledeivce"
+homepage = "https://github.com/iotpi/libimobiledevice-rs"
+repository = "https://github.com/iotpi/libimobiledevice-rs.git"
+license = "GPL-3.0"
+edition = "2018"
+
+[dependencies]
+libc = "0.2.67"
+chrono = "0.4.11"
+paste = "0.1.10"
+libplist = { path = "../libplist" }
+
+[dev-dependencies]
+uuid = { version = "0.5.1", features = ["v4"] }
+clap = "2.33.0"
+anyhow = "1.0"
+
+[build-dependencies]
+bindgen = "0.53.2"
+pkg-config = "0.3.17"
